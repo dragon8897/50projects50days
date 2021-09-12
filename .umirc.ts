@@ -6,7 +6,10 @@ export default defineConfig({
   },
   routes: [
     { path: '/', component: '@/pages/index' },
-    { path: '/expanding_cards', component: '@/pages/projects/expanding_cards' },
+    {
+      path: '/expanding_cards',
+      component: '@/pages/projects/expanding_cards/index',
+    },
   ],
   fastRefresh: {},
 });
