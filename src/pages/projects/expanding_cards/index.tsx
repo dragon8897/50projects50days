@@ -29,6 +29,7 @@ export default () => {
     <div className={styles.container}>
       {images.map((value, i) => (
         <div
+          key={i}
           className={styles.panel + (i === index ? ` ${styles.active}` : '')}
           style={{
             backgroundImage: `url("${value.url}")`,
