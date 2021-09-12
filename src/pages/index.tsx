@@ -9,6 +9,9 @@ export default function IndexPage() {
         <li>
           <Link to="/expanding_cards">expanding-cards</Link>
         </li>
+        <li>
+          <Link to="/progress_steps">progress-steps</Link>
+        </li>
       </div>
     </div>
   );

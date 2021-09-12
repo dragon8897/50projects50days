@@ -10,6 +10,10 @@ export default defineConfig({
       path: '/expanding_cards',
       component: '@/pages/projects/expanding_cards/index',
     },
+    {
+      path: '/progress_steps',
+      component: '@/pages/projects/progress_steps/index',
+    },
   ],
   fastRefresh: {},
 });
