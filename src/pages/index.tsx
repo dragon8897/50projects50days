@@ -12,6 +12,9 @@ export default function IndexPage() {
         <li>
           <Link to="/progress_steps">progress-steps</Link>
         </li>
+        <li>
+          <Link to="/rotating_navigation">rotating-navigation</Link>
+        </li>
       </div>
     </div>
   );

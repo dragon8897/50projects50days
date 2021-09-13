@@ -14,6 +14,10 @@ export default defineConfig({
       path: '/progress_steps',
       component: '@/pages/projects/progress_steps/index',
     },
+    {
+      path: '/rotating_navigation',
+      component: '@/pages/projects/rotating_navigation/index',
+    },
   ],
   fastRefresh: {},
 });
