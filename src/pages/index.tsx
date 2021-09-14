@@ -16,6 +16,9 @@ export default function IndexPage() {
           <li>
             <Link to="/rotating_navigation">rotating-navigation</Link>
           </li>
+          <li>
+            <Link to="/hidden_search">hidden-search</Link>
+          </li>
         </ol>
       </div>
     </div>

@@ -18,6 +18,10 @@ export default defineConfig({
       path: '/rotating_navigation',
       component: '@/pages/projects/rotating_navigation/index',
     },
+    {
+      path: '/hidden_search',
+      component: '@/pages/projects/hidden_search/index',
+    },
   ],
   fastRefresh: {},
 });
