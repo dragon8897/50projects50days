@@ -22,6 +22,10 @@ export default defineConfig({
       path: '/hidden_search',
       component: '@/pages/projects/hidden_search/index',
     },
+    {
+      path: '/blurry_loading',
+      component: '@/pages/projects/blurry_loading/index',
+    },
   ],
   fastRefresh: {},
 });

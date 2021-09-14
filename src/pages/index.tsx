@@ -19,6 +19,9 @@ export default function IndexPage() {
           <li>
             <Link to="/hidden_search">hidden-search</Link>
           </li>
+          <li>
+            <Link to="/blurry_loading">blurry-loading</Link>
+          </li>
         </ol>
       </div>
     </div>
