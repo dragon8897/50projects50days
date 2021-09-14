@@ -8,24 +8,12 @@ export default () => {
     <div className={styles.project}>
       <div className={styles.container + (show ? ` ${styles.show_nav}` : '')}>
         <div className={styles.circle_container}>
-          <div className={styles.circle}>
-            <button
-              id="close"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <i className={`fas fa-times`}></i>
-            </button>
-            <button
-              id="open"
-              onClick={() => {
-                setShow(true);
-              }}
-            >
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
+          <div
+            className={styles.circle}
+            onClick={() => {
+              setShow(!show);
+            }}
+          ></div>
         </div>
 
         <div className={styles.content}>
