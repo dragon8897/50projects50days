@@ -25,6 +25,9 @@ export default function IndexPage() {
           <li>
             <Link to="/scroll_animation">scroll-animation</Link>
           </li>
+          <li>
+            <Link to="/split_landing_page">split-landing-page</Link>
+          </li>
         </ol>
       </div>
     </div>

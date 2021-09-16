@@ -30,6 +30,10 @@ export default defineConfig({
       path: '/scroll_animation',
       component: '@/pages/projects/scroll_animation/index',
     },
+    {
+      path: '/split_landing_page',
+      component: '@/pages/projects/split_landing_page/index',
+    },
   ],
   fastRefresh: {},
 });
