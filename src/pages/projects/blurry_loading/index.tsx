@@ -17,9 +17,12 @@ export default () => {
     if (loading > 99) {
       return;
     }
-    setTimeout(() => {
+    const t = setTimeout(() => {
       setLoading(loading + 1);
     }, 30);
+    return () => {
+      clearTimeout(t);
+    };
   }, [loading]);
 
   return (

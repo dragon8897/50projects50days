@@ -22,6 +22,9 @@ export default function IndexPage() {
           <li>
             <Link to="/blurry_loading">blurry-loading</Link>
           </li>
+          <li>
+            <Link to="/scroll_animation">scroll-animation</Link>
+          </li>
         </ol>
       </div>
     </div>

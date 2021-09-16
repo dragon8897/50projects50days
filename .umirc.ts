@@ -26,6 +26,10 @@ export default defineConfig({
       path: '/blurry_loading',
       component: '@/pages/projects/blurry_loading/index',
     },
+    {
+      path: '/scroll_animation',
+      component: '@/pages/projects/scroll_animation/index',
+    },
   ],
   fastRefresh: {},
 });
