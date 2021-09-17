@@ -34,6 +34,10 @@ export default defineConfig({
       path: '/split_landing_page',
       component: '@/pages/projects/split_landing_page/index',
     },
+    {
+      path: '/form_input_wave',
+      component: '@/pages/projects/form_input_wave/index',
+    },
   ],
   fastRefresh: {},
 });

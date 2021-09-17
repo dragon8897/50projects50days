@@ -28,6 +28,9 @@ export default function IndexPage() {
           <li>
             <Link to="/split_landing_page">split-landing-page</Link>
           </li>
+          <li>
+            <Link to="/form_input_wave">form-input-wave</Link>
+          </li>
         </ol>
       </div>
     </div>
