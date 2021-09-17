@@ -8,12 +8,28 @@ export default () => {
       <form>
         <div className={styles.form_control}>
           <input type="text" required />
-          <label>Email</label>
+          <label>
+            {'Email'.split('').map((letter, idx) => {
+              return (
+                <span key={idx} style={{ transitionDelay: `${idx * 50}ms` }}>
+                  {letter}
+                </span>
+              );
+            })}
+          </label>
         </div>
 
         <div className={styles.form_control}>
           <input type="password" required autoComplete="off" />
-          <label>Password</label>
+          <label>
+            {'Password'.split('').map((letter, idx) => {
+              return (
+                <span key={idx} style={{ transitionDelay: `${idx * 50}ms` }}>
+                  {letter}
+                </span>
+              );
+            })}
+          </label>
         </div>
 
         <button className={styles.btn}>Login</button>
