@@ -31,6 +31,9 @@ export default function IndexPage() {
           <li>
             <Link to="/form_input_wave">form-input-wave</Link>
           </li>
+          <li>
+            <Link to="/sound_board">sound-board</Link>
+          </li>
         </ol>
       </div>
     </div>

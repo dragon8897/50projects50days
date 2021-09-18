@@ -38,6 +38,17 @@ export default defineConfig({
       path: '/form_input_wave',
       component: '@/pages/projects/form_input_wave/index',
     },
+    {
+      path: '/sound_board',
+      component: '@/pages/projects/sound_board/index',
+    },
   ],
   fastRefresh: {},
+  chainWebpack: (config) => {
+    config.module
+      .rule('media')
+      .test(/.mp3$/)
+      .use('file-loader')
+      .loader(require.resolve('file-loader'));
+  },
 });
