@@ -34,6 +34,12 @@ export default function IndexPage() {
           <li>
             <Link to="/sound_board">sound-board</Link>
           </li>
+          <li>
+            <Link to="/dad_jokes">dad-jokes</Link>
+          </li>
+          <li>
+            <Link to="/event_keycodes">event-keycodes</Link>
+          </li>
         </ol>
       </div>
     </div>

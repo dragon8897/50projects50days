@@ -42,6 +42,14 @@ export default defineConfig({
       path: '/sound_board',
       component: '@/pages/projects/sound_board/index',
     },
+    {
+      path: '/dad_jokes',
+      component: '@/pages/projects/dad_jokes/index',
+    },
+    {
+      path: '/event_keycodes',
+      component: '@/pages/projects/event_keycodes/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
