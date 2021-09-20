@@ -54,6 +54,10 @@ export default defineConfig({
       path: '/faq_collapse',
       component: '@/pages/projects/faq_collapse/index',
     },
+    {
+      path: '/random_choice_picker',
+      component: '@/pages/projects/random_choice_picker/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
