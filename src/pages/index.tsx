@@ -40,6 +40,9 @@ export default function IndexPage() {
           <li>
             <Link to="/event_keycodes">event-keycodes</Link>
           </li>
+          <li>
+            <Link to="/faq_collapse">faq-collapse</Link>
+          </li>
         </ol>
       </div>
     </div>

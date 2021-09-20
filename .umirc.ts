@@ -50,6 +50,10 @@ export default defineConfig({
       path: '/event_keycodes',
       component: '@/pages/projects/event_keycodes/index',
     },
+    {
+      path: '/faq_collapse',
+      component: '@/pages/projects/faq_collapse/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
