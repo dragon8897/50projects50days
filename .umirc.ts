@@ -58,6 +58,14 @@ export default defineConfig({
       path: '/random_choice_picker',
       component: '@/pages/projects/random_choice_picker/index',
     },
+    {
+      path: '/animated_navigation',
+      component: '@/pages/projects/animated_navigation/index',
+    },
+    {
+      path: '/incrementing_counter',
+      component: '@/pages/projects/incrementing_counter/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

@@ -46,6 +46,12 @@ export default function IndexPage() {
           <li>
             <Link to="/random_choice_picker">random_choice_picker</Link>
           </li>
+          <li>
+            <Link to="/animated_navigation">animated_navigation</Link>
+          </li>
+          <li>
+            <Link to="/incrementing_counter">incrementing_counter</Link>
+          </li>
         </ol>
       </div>
     </div>
