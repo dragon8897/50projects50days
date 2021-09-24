@@ -66,6 +66,14 @@ export default defineConfig({
       path: '/incrementing_counter',
       component: '@/pages/projects/incrementing_counter/index',
     },
+    {
+      path: '/drink_water',
+      component: '@/pages/projects/drink_water/index',
+    },
+    {
+      path: '/background_slider',
+      component: '@/pages/projects/background_slider/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

@@ -52,6 +52,12 @@ export default function IndexPage() {
           <li>
             <Link to="/incrementing_counter">incrementing_counter</Link>
           </li>
+          <li>
+            <Link to="/drink_water">drink_water</Link>
+          </li>
+          <li>
+            <Link to="/background_slider">background_slider</Link>
+          </li>
         </ol>
       </div>
     </div>
