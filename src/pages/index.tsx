@@ -58,6 +58,12 @@ export default function IndexPage() {
           <li>
             <Link to="/background_slider">background_slider</Link>
           </li>
+          <li>
+            <Link to="/theme_clock">theme_clock</Link>
+          </li>
+          <li>
+            <Link to="/button_ripple_effect">button_ripple_effect</Link>
+          </li>
         </ol>
       </div>
     </div>

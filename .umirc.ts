@@ -74,6 +74,14 @@ export default defineConfig({
       path: '/background_slider',
       component: '@/pages/projects/background_slider/index',
     },
+    {
+      path: '/theme_clock',
+      component: '@/pages/projects/theme_clock/index',
+    },
+    {
+      path: '/button_ripple_effect',
+      component: '@/pages/projects/button_ripple_effect/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
