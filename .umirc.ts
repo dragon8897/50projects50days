@@ -82,6 +82,14 @@ export default defineConfig({
       path: '/button_ripple_effect',
       component: '@/pages/projects/button_ripple_effect/index',
     },
+    {
+      path: '/drag_n_drop',
+      component: '@/pages/projects/drag_n_drop/index',
+    },
+    {
+      path: '/drawing_app',
+      component: '@/pages/projects/drawing_app/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

@@ -64,6 +64,12 @@ export default function IndexPage() {
           <li>
             <Link to="/button_ripple_effect">button_ripple_effect</Link>
           </li>
+          <li>
+            <Link to="/drag_n_drop">drag_n_drop</Link>
+          </li>
+          <li>
+            <Link to="/drawing_app">drawing_app</Link>
+          </li>
         </ol>
       </div>
     </div>
