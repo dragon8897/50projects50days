@@ -90,6 +90,14 @@ export default defineConfig({
       path: '/drawing_app',
       component: '@/pages/projects/drawing_app/index',
     },
+    {
+      path: '/kinetic_loader',
+      component: '@/pages/projects/kinetic_loader/index',
+    },
+    {
+      path: '/content_placeholder',
+      component: '@/pages/projects/content_placeholder/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

@@ -70,6 +70,12 @@ export default function IndexPage() {
           <li>
             <Link to="/drawing_app">drawing_app</Link>
           </li>
+          <li>
+            <Link to="/kinetic_loader">kinetic_loader</Link>
+          </li>
+          <li>
+            <Link to="/content_placeholder">content_placeholder</Link>
+          </li>
         </ol>
       </div>
     </div>
