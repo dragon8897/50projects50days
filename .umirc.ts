@@ -98,6 +98,14 @@ export default defineConfig({
       path: '/content_placeholder',
       component: '@/pages/projects/content_placeholder/index',
     },
+    {
+      path: '/sticky_navbar',
+      component: '@/pages/projects/sticky_navbar/index',
+    },
+    {
+      path: '/double_vertical_slider',
+      component: '@/pages/projects/double_vertical_slider/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

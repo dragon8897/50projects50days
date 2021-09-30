@@ -52,7 +52,7 @@ export default () => {
         </div>
       </div>
 
-      <nav>
+      <nav className={styles.nav}>
         <ul>
           <li>
             <i className="fas fa-home"></i>

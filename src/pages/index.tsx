@@ -76,6 +76,12 @@ export default function IndexPage() {
           <li>
             <Link to="/content_placeholder">content_placeholder</Link>
           </li>
+          <li>
+            <Link to="/sticky_navbar">sticky_navbar</Link>
+          </li>
+          <li>
+            <Link to="/double_vertical_slider">double_vertical_slider</Link>
+          </li>
         </ol>
       </div>
     </div>
