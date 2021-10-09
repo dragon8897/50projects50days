@@ -82,6 +82,12 @@ export default function IndexPage() {
           <li>
             <Link to="/double_vertical_slider">double_vertical_slider</Link>
           </li>
+          <li>
+            <Link to="/toast_notification">toast_notification</Link>
+          </li>
+          <li>
+            <Link to="/github_profiles">github_profiles</Link>
+          </li>
         </ol>
       </div>
     </div>

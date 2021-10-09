@@ -106,6 +106,14 @@ export default defineConfig({
       path: '/double_vertical_slider',
       component: '@/pages/projects/double_vertical_slider/index',
     },
+    {
+      path: '/toast_notification',
+      component: '@/pages/projects/toast_notification/index',
+    },
+    {
+      path: '/github_profiles',
+      component: '@/pages/projects/github_profiles/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
