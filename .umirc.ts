@@ -110,6 +110,10 @@ export default defineConfig({
       path: '/double_click_heart',
       component: '@/pages/projects/double_click_heart/index',
     },
+    {
+      path: '/auto_text_effect',
+      component: '@/pages/projects/auto_text_effect/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
