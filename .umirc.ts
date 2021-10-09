@@ -106,6 +106,10 @@ export default defineConfig({
       path: '/double_vertical_slider',
       component: '@/pages/projects/double_vertical_slider/index',
     },
+    {
+      path: '/double_click_heart',
+      component: '@/pages/projects/double_click_heart/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

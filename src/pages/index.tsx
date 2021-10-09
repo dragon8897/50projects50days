@@ -82,6 +82,9 @@ export default function IndexPage() {
           <li>
             <Link to="/double_vertical_slider">double_vertical_slider</Link>
           </li>
+          <li>
+            <Link to="/double_click_heart">double_click_heart</Link>
+          </li>
         </ol>
       </div>
     </div>
