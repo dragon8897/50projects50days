@@ -88,6 +88,9 @@ export default function IndexPage() {
           <li>
             <Link to="/auto_text_effect">auto_text_effect</Link>
           </li>
+          <li>
+            <Link to="/password_generator">password_generator</Link>
+          </li>
         </ol>
       </div>
     </div>

@@ -114,6 +114,10 @@ export default defineConfig({
       path: '/auto_text_effect',
       component: '@/pages/projects/auto_text_effect/index',
     },
+    {
+      path: '/password_generator',
+      component: '@/pages/projects/password_generator/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
