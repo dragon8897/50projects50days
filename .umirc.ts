@@ -114,6 +114,18 @@ export default defineConfig({
       path: '/github_profiles',
       component: '@/pages/projects/github_profiles/index',
     },
+    {
+      path: '/double_click_heart',
+      component: '@/pages/projects/double_click_heart/index',
+    },
+    {
+      path: '/auto_text_effect',
+      component: '@/pages/projects/auto_text_effect/index',
+    },
+    {
+      path: '/password_generator',
+      component: '@/pages/projects/password_generator/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
