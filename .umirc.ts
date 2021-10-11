@@ -130,6 +130,10 @@ export default defineConfig({
       path: '/good_cheap_fast',
       component: '@/pages/projects/good_cheap_fast/index',
     },
+    {
+      path: '/notes_app',
+      component: '@/pages/projects/notes_app/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

@@ -100,6 +100,9 @@ export default function IndexPage() {
           <li>
             <Link to="/good_cheap_fast">good_cheap_fast</Link>
           </li>
+          <li>
+            <Link to="/notes_app">notes_app</Link>
+          </li>
         </ol>
       </div>
     </div>

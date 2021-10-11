@@ -37,6 +37,7 @@ export default () => {
           when you're done
         </h3>
         <textarea
+          className={styles.textarea}
           autoFocus
           placeholder="Enter choices here..."
           onKeyUp={(e: React.KeyboardEvent<HTMLTextAreaElement>) => {
