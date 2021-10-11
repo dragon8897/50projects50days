@@ -126,6 +126,10 @@ export default defineConfig({
       path: '/password_generator',
       component: '@/pages/projects/password_generator/index',
     },
+    {
+      path: '/good_cheap_fast',
+      component: '@/pages/projects/good_cheap_fast/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

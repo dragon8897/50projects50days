@@ -97,6 +97,9 @@ export default function IndexPage() {
           <li>
             <Link to="/password_generator">password_generator</Link>
           </li>
+          <li>
+            <Link to="/good_cheap_fast">good_cheap_fast</Link>
+          </li>
         </ol>
       </div>
     </div>
