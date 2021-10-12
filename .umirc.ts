@@ -138,6 +138,10 @@ export default defineConfig({
       path: '/animated_countdown',
       component: '@/pages/projects/animated_countdown/index',
     },
+    {
+      path: '/image_carousel',
+      component: '@/pages/projects/image_carousel/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
