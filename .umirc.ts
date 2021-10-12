@@ -146,6 +146,10 @@ export default defineConfig({
       path: '/hoverboard',
       component: '@/pages/projects/hoverboard/index',
     },
+    {
+      path: '/pokedex',
+      component: '@/pages/projects/pokedex/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

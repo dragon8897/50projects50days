@@ -109,6 +109,9 @@ export default function IndexPage() {
           <li>
             <Link to="/hoverboard">hoverboard</Link>
           </li>
+          <li>
+            <Link to="/pokedex">pokedex</Link>
+          </li>
         </ol>
       </div>
     </div>
