@@ -134,6 +134,10 @@ export default defineConfig({
       path: '/notes_app',
       component: '@/pages/projects/notes_app/index',
     },
+    {
+      path: '/animated_countdown',
+      component: '@/pages/projects/animated_countdown/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

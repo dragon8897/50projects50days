@@ -103,6 +103,9 @@ export default function IndexPage() {
           <li>
             <Link to="/notes_app">notes_app</Link>
           </li>
+          <li>
+            <Link to="/animated_countdown">animated_countdown</Link>
+          </li>
         </ol>
       </div>
     </div>

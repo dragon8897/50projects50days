@@ -8,8 +8,6 @@ const Node = (n: { id: number; onDelete: (id: number) => void }) => {
   const [lock, setLock] = useState<boolean>(false);
   const [content, setContent] = useState<string>('');
 
-  console.log('refresh', n.id);
-
   return (
     <div className={styles.note}>
       <div className={styles.tools}>
