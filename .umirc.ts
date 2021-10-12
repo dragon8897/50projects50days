@@ -142,6 +142,10 @@ export default defineConfig({
       path: '/image_carousel',
       component: '@/pages/projects/image_carousel/index',
     },
+    {
+      path: '/hoverboard',
+      component: '@/pages/projects/hoverboard/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
