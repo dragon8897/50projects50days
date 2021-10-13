@@ -15,3 +15,8 @@ Start the dev server,
 ```bash
 $ yarn start
 ```
+## bug
+
+### pokedex
+
+- useEffect 中使用了 `fetch` , unmounted 时没有取消
