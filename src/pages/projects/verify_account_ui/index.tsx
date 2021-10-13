@@ -30,7 +30,6 @@ export default () => {
               <input
                 key={i}
                 ref={inputRef}
-                autoFocus
                 type="number"
                 className={styles.code}
                 placeholder="0"

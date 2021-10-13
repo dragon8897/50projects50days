@@ -124,6 +124,9 @@ export default function IndexPage() {
           <li>
             <Link to="/verify_account_ui">verify_account_ui</Link>
           </li>
+          <li>
+            <Link to="/live_user_filter">live_user_filter</Link>
+          </li>
         </ol>
       </div>
     </div>

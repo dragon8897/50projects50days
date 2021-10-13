@@ -162,6 +162,10 @@ export default defineConfig({
       path: '/verify_account_ui',
       component: '@/pages/projects/verify_account_ui/index',
     },
+    {
+      path: '/live_user_filter',
+      component: '@/pages/projects/live_user_filter/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
