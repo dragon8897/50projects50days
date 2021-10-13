@@ -166,6 +166,10 @@ export default defineConfig({
       path: '/live_user_filter',
       component: '@/pages/projects/live_user_filter/index',
     },
+    {
+      path: '/feedback_ui_design',
+      component: '@/pages/projects/feedback_ui_design/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {
