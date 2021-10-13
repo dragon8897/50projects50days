@@ -158,6 +158,10 @@ export default defineConfig({
       path: '/3d_boxes_background',
       component: '@/pages/projects/3d_boxes_background/index',
     },
+    {
+      path: '/verify_account_ui',
+      component: '@/pages/projects/verify_account_ui/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

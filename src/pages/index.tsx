@@ -118,6 +118,9 @@ export default function IndexPage() {
           <li>
             <Link to="/3d_boxes_background">3d_boxes_background</Link>
           </li>
+          <li>
+            <Link to="/verify_account_ui">verify_account_ui</Link>
+          </li>
         </ol>
       </div>
     </div>
