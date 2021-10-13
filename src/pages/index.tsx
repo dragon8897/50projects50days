@@ -107,6 +107,9 @@ export default function IndexPage() {
             <Link to="/animated_countdown">animated_countdown</Link>
           </li>
           <li>
+            <Link to="/image_carousel">image_carousel</Link>
+          </li>
+          <li>
             <Link to="/hoverboard">hoverboard</Link>
           </li>
           <li>
