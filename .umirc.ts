@@ -150,6 +150,10 @@ export default defineConfig({
       path: '/pokedex',
       component: '@/pages/projects/pokedex/index',
     },
+    {
+      path: '/mobile_tab_navigation',
+      component: '@/pages/projects/mobile_tab_navigation/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

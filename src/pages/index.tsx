@@ -112,6 +112,9 @@ export default function IndexPage() {
           <li>
             <Link to="/pokedex">pokedex</Link>
           </li>
+          <li>
+            <Link to="/mobile_tab_navigation">mobile_tab_navigation</Link>
+          </li>
         </ol>
       </div>
     </div>
