@@ -154,6 +154,10 @@ export default defineConfig({
       path: '/mobile_tab_navigation',
       component: '@/pages/projects/mobile_tab_navigation/index',
     },
+    {
+      path: '/3d_boxes_background',
+      component: '@/pages/projects/3d_boxes_background/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

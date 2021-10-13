@@ -115,6 +115,9 @@ export default function IndexPage() {
           <li>
             <Link to="/mobile_tab_navigation">mobile_tab_navigation</Link>
           </li>
+          <li>
+            <Link to="/3d_boxes_background">3d_boxes_background</Link>
+          </li>
         </ol>
       </div>
     </div>
