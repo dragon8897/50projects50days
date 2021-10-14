@@ -174,6 +174,10 @@ export default defineConfig({
       path: '/custom_range_slider',
       component: '@/pages/projects/custom_range_slider/index',
     },
+    {
+      path: '/quiz_app',
+      component: '@/pages/projects/quiz_app/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

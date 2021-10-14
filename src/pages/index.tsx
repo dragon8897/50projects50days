@@ -133,6 +133,9 @@ export default function IndexPage() {
           <li>
             <Link to="/custom_range_slider">custom_range_slider</Link>
           </li>
+          <li>
+            <Link to="/quiz_app">quiz_app</Link>
+          </li>
         </ol>
       </div>
     </div>
