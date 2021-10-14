@@ -142,6 +142,9 @@ export default function IndexPage() {
           <li>
             <Link to="/random_image_generator">random_image_generator</Link>
           </li>
+          <li>
+            <Link to="/todo_list">todo_list</Link>
+          </li>
         </ol>
       </div>
     </div>

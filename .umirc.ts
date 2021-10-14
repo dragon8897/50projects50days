@@ -186,6 +186,10 @@ export default defineConfig({
       path: '/random_image_generator',
       component: '@/pages/projects/random_image_generator/index',
     },
+    {
+      path: '/todo_list',
+      component: '@/pages/projects/todo_list/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

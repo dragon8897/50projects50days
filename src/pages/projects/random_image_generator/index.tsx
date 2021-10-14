@@ -16,7 +16,7 @@ export default () => {
     <div className={styles.body}>
       <h1>Random Image Feed</h1>
       <div className={styles.container}>
-        {Array(5)
+        {Array(15)
           .fill(0)
           .map((_, i) => {
             return <img key={i} src={unsplashURL + getRandomSize()}></img>;
