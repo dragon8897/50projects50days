@@ -178,6 +178,10 @@ export default defineConfig({
       path: '/quiz_app',
       component: '@/pages/projects/quiz_app/index',
     },
+    {
+      path: '/testimonial_box_switcher',
+      component: '@/pages/projects/testimonial_box_switcher/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

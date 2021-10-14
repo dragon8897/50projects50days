@@ -136,6 +136,9 @@ export default function IndexPage() {
           <li>
             <Link to="/quiz_app">quiz_app</Link>
           </li>
+          <li>
+            <Link to="/testimonial_box_switcher">testimonial_box_switcher</Link>
+          </li>
         </ol>
       </div>
     </div>
