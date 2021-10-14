@@ -190,6 +190,10 @@ export default defineConfig({
       path: '/todo_list',
       component: '@/pages/projects/todo_list/index',
     },
+    {
+      path: '/insect_catch_game',
+      component: '@/pages/projects/insect_catch_game/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

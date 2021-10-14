@@ -145,6 +145,9 @@ export default function IndexPage() {
           <li>
             <Link to="/todo_list">todo_list</Link>
           </li>
+          <li>
+            <Link to="/insect_catch_game">insect_catch_game</Link>
+          </li>
         </ol>
       </div>
     </div>

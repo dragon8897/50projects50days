@@ -18,6 +18,9 @@ export default () => {
         className={styles.form}
         onSubmit={(e: React.FormEvent) => {
           e.preventDefault();
+          if (value.length == 0) {
+            return;
+          }
           setList((prev) => [
             ...prev,
             {
