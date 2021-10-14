@@ -182,6 +182,10 @@ export default defineConfig({
       path: '/testimonial_box_switcher',
       component: '@/pages/projects/testimonial_box_switcher/index',
     },
+    {
+      path: '/random_image_generator',
+      component: '@/pages/projects/random_image_generator/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

@@ -139,6 +139,9 @@ export default function IndexPage() {
           <li>
             <Link to="/testimonial_box_switcher">testimonial_box_switcher</Link>
           </li>
+          <li>
+            <Link to="/random_image_generator">random_image_generator</Link>
+          </li>
         </ol>
       </div>
     </div>
