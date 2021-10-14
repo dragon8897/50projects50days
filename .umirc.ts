@@ -170,6 +170,10 @@ export default defineConfig({
       path: '/feedback_ui_design',
       component: '@/pages/projects/feedback_ui_design/index',
     },
+    {
+      path: '/custom_range_slider',
+      component: '@/pages/projects/custom_range_slider/index',
+    },
   ],
   fastRefresh: {},
   chainWebpack: (config) => {

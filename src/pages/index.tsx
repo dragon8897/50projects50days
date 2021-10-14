@@ -130,6 +130,9 @@ export default function IndexPage() {
           <li>
             <Link to="/feedback_ui_design">feedback_ui_design</Link>
           </li>
+          <li>
+            <Link to="/custom_range_slider">custom_range_slider</Link>
+          </li>
         </ol>
       </div>
     </div>
