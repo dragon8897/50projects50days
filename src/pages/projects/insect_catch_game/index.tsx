@@ -1,4 +1,10 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+  useMemo,
+} from 'react';
 import styles from './index.less';
 
 function useInterval(cb: () => void, delay: number) {
@@ -24,9 +30,12 @@ function getRandomLocation() {
 
 const Insect = (t: {
   id: number;
+  x: number;
+  y: number;
   image: string;
   name: string;
   onCatch: (id: number) => void;
+  onRemove: (id: number) => void;
 }) => {
   const [catched, setCatched] = useState<boolean>(false);
 
@@ -34,28 +43,34 @@ const Insect = (t: {
     if (!catched) {
       return;
     }
+    t.onCatch(t.id);
     const to = setTimeout(() => {
-      t.onCatch(t.id);
+      t.onRemove(t.id);
     }, 2000);
     return () => {
       clearTimeout(to);
     };
   }, [catched]);
 
-  const { x, y } = getRandomLocation();
-  return (
-    <div
-      className={styles.insect}
-      style={{ left: `${x}px`, top: `${y}px` }}
-      onClick={() => {
-        setCatched(true);
-      }}
-    >
+  const Image = useMemo(() => {
+    return (
       <img
         src={t.image}
         alt={t.name}
         style={{ transform: `rotate(${Math.random() * 360}deg)` }}
       ></img>
+    );
+  }, []);
+
+  return (
+    <div
+      className={styles.insect + (catched ? ` ${styles.caught}` : '')}
+      style={{ left: `${t.x}px`, top: `${t.y}px` }}
+      onClick={() => {
+        setCatched(true);
+      }}
+    >
+      {Image}
     </div>
   );
 };
@@ -69,7 +84,13 @@ export default () => {
   const [second, setSecond] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [index, setIndex] = useState<number>(-1);
-  const [ids, setIds] = useState<number[]>([]);
+  const [ids, setIds] = useState<
+    {
+      id: number;
+      x: number;
+      y: number;
+    }[]
+  >([]);
 
   const insects: {
     image: string;
@@ -104,7 +125,15 @@ export default () => {
   }, [second]);
 
   const addInsect = () => {
-    setIds((prev) => [...prev, idx++]);
+    const { x, y } = getRandomLocation();
+    setIds((prev) => [
+      ...prev,
+      {
+        id: idx++,
+        x: x,
+        y: y,
+      },
+    ]);
   };
 
   useEffect(() => {
@@ -116,11 +145,54 @@ export default () => {
 
   const catchInsert = useCallback(
     (id) => {
-      setScore(score + 1);
+      console.log('catch ', id);
+      setScore((score) => score + 1);
+      setTimeout(() => {
+        addInsect();
+      }, 1000);
+      setTimeout(() => {
+        addInsect();
+      }, 1500);
+    },
+    [setIds],
+  );
+
+  const removeInsert = useCallback(
+    (id) => {
+      console.log('remove', id);
       setIds((prev) => prev.filter((p) => p != id));
     },
     [setIds],
   );
+
+  const TimerH3 = useMemo(() => {
+    return <h3 className={styles.time}>Time: {tick}</h3>;
+  }, [tick]);
+
+  const ScoreH3 = useMemo(() => {
+    return <h3 className={styles.score}>Score: {score}</h3>;
+  }, [score]);
+
+  const InsertDiv = useMemo(() => {
+    return (
+      <div>
+        {ids.map((info, i) => {
+          return (
+            <Insect
+              key={i}
+              id={info.id}
+              x={info.x}
+              y={info.y}
+              image={insects[index].image}
+              name={insects[index].name}
+              onCatch={catchInsert}
+              onRemove={removeInsert}
+            ></Insect>
+          );
+        })}
+      </div>
+    );
+  }, [ids]);
 
   return (
     <div className={styles.body}>
@@ -162,27 +234,13 @@ export default () => {
         className={styles.screen + ' ' + styles.game_container}
         id="game-container"
       >
-        <h3 id="time" className={styles.time}>
-          Time: {tick}
-        </h3>
-        <h3 id="score" className={styles.score}>
-          Score: {score}
-        </h3>
+        {TimerH3}
+        {ScoreH3}
         <h5 id="message" className={styles.message}>
           Are you annnoyed yet? <br />
           You are playing an impossible game!!
         </h5>
-        {ids.map((id, i) => {
-          return (
-            <Insect
-              key={i}
-              id={id}
-              image={insects[index].image}
-              name={insects[index].name}
-              onCatch={catchInsert}
-            ></Insect>
-          );
-        })}
+        {InsertDiv}
       </div>
     </div>
   );
