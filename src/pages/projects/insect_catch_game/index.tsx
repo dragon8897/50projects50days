@@ -145,7 +145,6 @@ export default () => {
 
   const catchInsert = useCallback(
     (id) => {
-      console.log('catch ', id);
       setScore((score) => score + 1);
       setTimeout(() => {
         addInsect();
@@ -159,7 +158,6 @@ export default () => {
 
   const removeInsert = useCallback(
     (id) => {
-      console.log('remove', id);
       setIds((prev) => prev.filter((p) => p != id));
     },
     [setIds],
